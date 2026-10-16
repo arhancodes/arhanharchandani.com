@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" preserveAspectRatio="xMaxYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <pattern id="weave" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 14h28M14 0v28" stroke="#2563eb" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="640" fill="url(#sky)"/>
+  <rect width="1600" height="640" fill="url(#weave)"/>
+  <circle cx="1310" cy="170" r="74" fill="#ffffff" fill-opacity=".75"/>
+  <circle cx="1310" cy="170" r="118" fill="#ffffff" fill-opacity=".3"/>
+  <path d="M560 640 L820 400 L930 480 L1090 300 L1220 430 L1340 330 L1600 520 L1600 640Z" fill="#8b5cf6" fill-opacity=".2"/>
+  <path d="M700 640 L930 450 L1040 520 L1210 350 L1300 440 L1440 300 L1600 430 L1600 640Z" fill="#2563eb" fill-opacity=".22"/>
+  <path d="M1210 350 L1238 378 L1222 384 L1196 372Z M1440 300 L1470 328 L1450 338 L1422 322Z" fill="#ffffff" fill-opacity=".7"/>
+  <path d="M860 640 L1060 520 L1160 570 L1330 450 L1450 540 L1600 470 L1600 640Z" fill="#1e3a8a" fill-opacity=".2"/>
+  <path d="M1000 640 C1140 590 1260 610 1380 580 S1540 560 1600 575 L1600 640Z" fill="#1e3a8a" fill-opacity=".24"/>
+</svg>
