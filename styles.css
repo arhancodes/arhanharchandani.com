@@ -1271,3 +1271,96 @@ body.page main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Design addendum, October 2026 */
+
+/* B2: plain name logo */
+.logo,
+.page-header .logo {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+/* B1: headshot in the hero on wider screens */
+.hero-photo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .hero-photo {
+    display: block;
+    width: 320px;
+    height: auto;
+    aspect-ratio: 786 / 1008;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    flex-shrink: 0;
+  }
+
+  .about-photo {
+    display: none;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+
+/* B3 and B4: readable entries on subpages */
+body.page {
+  line-height: 1.7;
+}
+
+.project-content p {
+  max-width: 68ch;
+  text-align: left;
+}
+
+.project-content p + p {
+  margin-top: 1.25rem;
+}
+
+/* B5: left-aligned subpage headers, same edge as the entries */
+.page-title,
+.page-intro {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.page-title {
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.page-intro {
+  margin-bottom: 30px;
+}
+
+/* B6: equal award rows, years aligned to the top */
+.award-list {
+  grid-auto-rows: 1fr;
+}
+
+.award-list li {
+  align-items: flex-start;
+}
+
+.award-list .year {
+  align-self: flex-start;
+  padding-top: 2px;
+}
