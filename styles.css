@@ -1125,6 +1125,84 @@ body.page main {
   border-radius: 12px;
 }
 
+/* 2026-10 revision: hero label, linked tiles, footer lines, mobile order */
+
+.hero-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.highlight-grid li {
+  padding: 0;
+}
+
+.highlight-grid a {
+  display: block;
+  height: 100%;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.highlight-grid a:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.footer-lines {
+  text-align: center;
+}
+
+.footer-lines p + p {
+  margin-top: 8px;
+}
+
+.site-footer .footer-lines {
+  color: var(--text-faint);
+}
+
+.site-footer .footer-lines a,
+.page-footer .footer-lines a {
+  display: inline-block;
+  padding: 6px 4px;
+}
+
+.page-footer .footer-lines {
+  margin-top: 8px;
+}
+
+.project-content .meta + .meta {
+  margin-top: -2px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 28px 0 32px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 8px;
+  }
+
+  .hero .tagline {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero .actions {
+    gap: 10px;
+  }
+
+  .about-photo {
+    order: 2;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

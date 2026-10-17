@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arhanharchandani.com/sitemap.xml
+Sitemap: https://arhancodes.github.io/arhanharchandani.com/sitemap.xml
